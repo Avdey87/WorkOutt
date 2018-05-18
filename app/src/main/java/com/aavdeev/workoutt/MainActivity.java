@@ -32,6 +32,4 @@ public class MainActivity extends Activity implements WorkoutListFragment.Workou
             startActivity(intent);
         }
     }
-
-
 }

@@ -13,8 +13,8 @@ public class DetailActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
-        WorkoutDetailFragment workoutDetailFragment = (WorkoutDetailFragment) getFragmentManager().findFragmentById(R.id.detail_frag);
         int workoutId = (int) getIntent().getExtras().get(EXTRA_WORKOUT_ID);
+        WorkoutDetailFragment workoutDetailFragment = (WorkoutDetailFragment) getFragmentManager().findFragmentById(R.id.detail_frag);
         workoutDetailFragment.setWorkoutID(workoutId);
     }
 }
